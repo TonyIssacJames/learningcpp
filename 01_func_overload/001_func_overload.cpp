@@ -68,6 +68,12 @@ void print(double a)
     cout << __func__<< " double"<<endl;
 }
 
+// /* uncomment this to fix the compilation error */
+// void print(long int a)
+// {
+//     cout<<a <<endl;
+//     cout << __func__<< " long int"<<endl;
+// }
 
 class HalfFloat
 {

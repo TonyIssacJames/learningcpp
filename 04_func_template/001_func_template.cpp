@@ -49,8 +49,10 @@ main()
     //cout << max_func(true, 4.0)<<endl;
 
 
-    //int z = max_func(5, 6); //
-    int z = max_func<int, int, int>(5, 6); //
+    //int z = max_func(5, 6); // func template 
+    int z = max_func<int, int, int>(5, 6); // func template instantiation
+
+    cout << "z: " << z <<endl;
 }
 
 //SUmmarized
