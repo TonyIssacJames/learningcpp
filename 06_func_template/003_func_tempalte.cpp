@@ -46,5 +46,6 @@ main()
 
     std::cout << "z_int: " << z_int <<std::endl;
     std::cout << "z_double: " << z_double <<std::endl;
-    std::cout << "z_string: " << z_string <<std::endl;
+    std::cout << "z_string: " << z_string <<std::endl; //error: template-id ‘add_one<>’ for ‘std::string add_one(std::string)’ does not match any template declaration
+                                                        //error: no match for ‘operator+’ (operand types are ‘std::__cxx11::basic_string<char>’ and ‘int’) 
 }

@@ -16,7 +16,7 @@ main()
     
     int z_int, z1_int;
     double z_double;
-    int z_float
+    int z_float;
     
     z_int = max_func(5, 6.0); //instantite int, double
     z1_int = max_func(9, 5.0f); //use int, double  with float will be promoted to double 
@@ -33,4 +33,5 @@ main()
     std::cout << "z_int: " << z_int <<std::endl;
     std::cout << "z1_int: " << z1_int <<std::endl;
     std::cout << "z_double: " << z_double <<std::endl;
+    std::cout << "z_float: " << z_float <<std::endl;
 }

@@ -121,6 +121,20 @@ using namespace std; //
                 //
 
 
+    lvalue (locator value):
+        Refers to an object that occupies some identifiable location in memory (has an address).
+        Can appear on the left-hand or right-hand side of an assignment.
+
+    rvalue (right value):
+        Refers to a temporary object or value that does not have a persistent memory address.
+        Cannot appear on the left-hand side of an assignment.
+
+    reference is an alias for existing object;
+    l value reference - reference (alias) for an l value
+
+
+    //we cannot bind non const l value reference to a non-modfieable to l value
+    // a reference cannot be re initstated
 */
 
 
