@@ -1,0 +1,74 @@
+001_func_tempalte.cpp:47:6: warning: ISO C++ forbids declaration of ‘main’ with no type [-Wreturn-type]
+   47 | main()
+      |      ^
+001_func_tempalte.cpp: In function ‘int main()’:
+001_func_tempalte.cpp:53:26: error: call of overloaded ‘max<int>(int, int)’ is ambiguous
+   53 |     z_int = max<int>(5, 6); //instantiate a function template (cloning the function and putting the type)
+      |                          ^
+001_func_tempalte.cpp:13:4: note: candidate: ‘T max(T, T) [with T = int]’
+   13 | T  max(T a, T b)
+      |    ^~~
+In file included from /usr/include/c++/9/bits/char_traits.h:39,
+                 from /usr/include/c++/9/ios:40,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from 001_func_tempalte.cpp:1:
+/usr/include/c++/9/bits/stl_algobase.h:222:5: note: candidate: ‘constexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = int]’
+  222 |     max(const _Tp& __a, const _Tp& __b)
+      |     ^~~
+001_func_tempalte.cpp:54:27: error: call of overloaded ‘max<int>(int, int)’ is ambiguous
+   54 |     z1_int = max<int>(9, 6); //already instantiated, directly calls the instntation
+      |                           ^
+001_func_tempalte.cpp:13:4: note: candidate: ‘T max(T, T) [with T = int]’
+   13 | T  max(T a, T b)
+      |    ^~~
+In file included from /usr/include/c++/9/bits/char_traits.h:39,
+                 from /usr/include/c++/9/ios:40,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from 001_func_tempalte.cpp:1:
+/usr/include/c++/9/bits/stl_algobase.h:222:5: note: candidate: ‘constexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = int]’
+  222 |     max(const _Tp& __a, const _Tp& __b)
+      |     ^~~
+001_func_tempalte.cpp:55:36: error: call of overloaded ‘max<double>(double, double)’ is ambiguous
+   55 |     z_double = max<double>(5.0, 7.0); //instantiate the double variant
+      |                                    ^
+001_func_tempalte.cpp:13:4: note: candidate: ‘T max(T, T) [with T = double]’
+   13 | T  max(T a, T b)
+      |    ^~~
+In file included from /usr/include/c++/9/bits/char_traits.h:39,
+                 from /usr/include/c++/9/ios:40,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from 001_func_tempalte.cpp:1:
+/usr/include/c++/9/bits/stl_algobase.h:222:5: note: candidate: ‘constexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = double]’
+  222 |     max(const _Tp& __a, const _Tp& __b)
+      |     ^~~
+001_func_tempalte.cpp:57:21: error: call of overloaded ‘max(int, int)’ is ambiguous
+   57 |     z_int = max(5, 6); //actual type is not provided, it will try to deduce, from the argument types and instantiagtt
+      |                     ^
+001_func_tempalte.cpp:13:4: note: candidate: ‘T max(T, T) [with T = int]’
+   13 | T  max(T a, T b)
+      |    ^~~
+In file included from /usr/include/c++/9/bits/char_traits.h:39,
+                 from /usr/include/c++/9/ios:40,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from 001_func_tempalte.cpp:1:
+/usr/include/c++/9/bits/stl_algobase.h:222:5: note: candidate: ‘constexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = int]’
+  222 |     max(const _Tp& __a, const _Tp& __b)
+      |     ^~~
+001_func_tempalte.cpp:60:23: error: call of overloaded ‘max(int, int)’ is ambiguous
+   60 |     z_int = max<>(8, 6); //it will only consider max int template function
+      |                       ^
+001_func_tempalte.cpp:13:4: note: candidate: ‘T max(T, T) [with T = int]’
+   13 | T  max(T a, T b)
+      |    ^~~
+In file included from /usr/include/c++/9/bits/char_traits.h:39,
+                 from /usr/include/c++/9/ios:40,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from 001_func_tempalte.cpp:1:
+/usr/include/c++/9/bits/stl_algobase.h:222:5: note: candidate: ‘constexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = int]’
+  222 |     max(const _Tp& __a, const _Tp& __b)
+      |     ^~~

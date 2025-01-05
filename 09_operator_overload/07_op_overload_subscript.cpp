@@ -58,6 +58,6 @@ int main()
     //destination is the object it sefl
 
 
-    copy constructor, copy assignment operators
-    overloading operator, and function and function templates
+    //copy constructor, copy assignment operators
+    //overloading operator, and function and function templates
 }
